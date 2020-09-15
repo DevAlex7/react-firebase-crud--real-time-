@@ -5,6 +5,11 @@
 /.pnp
 .pnp.js
 
+src/services
+.netlify
+
+src/components
+
 # testing
 /coverage
 
