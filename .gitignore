@@ -7,7 +7,7 @@
 
 
 .netlify
-
+src/firebase_config.js
 
 
 # testing
