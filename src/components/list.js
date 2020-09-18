@@ -31,6 +31,11 @@ const List = () => {
         });
     };
 
+    const deleteItem = (data) => {
+        const listRef = db.child(data.id)
+        listRef.remove()
+    } 
+
     return <>
         <div className="">
         {
@@ -39,7 +44,7 @@ const List = () => {
             :
                 list ? list.map((data, index)=> {
                     return <div key={index}>
-                        <Item checkAction={completeTodo} list={data} index={index}/>
+                        <Item deleteItem={deleteItem} checkAction={completeTodo} list={data} index={index}/>
                     </div>
                 })  : <h1>no items</h1>
         }

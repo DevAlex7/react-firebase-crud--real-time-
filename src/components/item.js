@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Item = ({checkAction, list ,index}) => {
+const Item = ({deleteItem, checkAction, list ,index}) => {
 
     
     
@@ -14,7 +14,7 @@ const Item = ({checkAction, list ,index}) => {
                     </label>
                 </div>
                 <div>
-                    <button className="bg-custom-red px-2 rounded">-</button>
+                    <button onClick={()=>deleteItem(list)} className="bg-custom-red focus:outline-none px-2 rounded">-</button>
                 </div>
             </div>
             <div className="py-2">

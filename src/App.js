@@ -49,7 +49,7 @@ function App() {
     }
 
     return (
-        <div className="w-full h-screen bg-white flex flex-wrap">
+        <div className="w-full h-full md:h-screen bg-white flex flex-wrap">
             <div className="w-full p-5 md:w-1/2 overflow-y-scroll">
             <Input
                 value={state.title}
