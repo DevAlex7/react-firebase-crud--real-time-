@@ -1,5 +1,4 @@
 import React from 'react'
-import {db} from '../services/firebase'
 
 const Input = ({value, label, handleAction, placeholder, error}) => {
     
