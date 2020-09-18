@@ -24,10 +24,10 @@ const List = () => {
     }, [])
 
 
-    const completeTodo = (id) => {
-        const listRef = db.child(id);
+    const completeTodo = (data) => {
+        const listRef = db.child(data.id);
         listRef.update({
-            complete: !list.complete,
+            complete: !data.complete,
         });
     };
 
